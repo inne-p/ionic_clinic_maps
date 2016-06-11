@@ -1,1 +1,1 @@
-"ionic loopnnack" 
+IONIC CLINIC MAPS
