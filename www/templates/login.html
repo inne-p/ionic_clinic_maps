@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-header-bar class="bar bar-header bar-calm">
+        <h1 class="title">Log In</h1>
+    </ion-header-bar>
+
+    <ion-content>
+        <form novalidate="novalidate" name="loginForm">
+           <div class="list list-inset">
+            <label class="item item-input">
+			    <i class="icon ion-ios7-person"></i>
+                <input type="text" name="username" placeholder="E-mail" ng-model="user.email" required>
+            </label>
+            <label class="item item-input">
+				<i class="icon ion-ios7-locked"></i>
+                <input type="password" name="password" placeholder="Password" ng-model="user.password" required>
+            </label>
+        </div>
+		<div class="padding">
+                <button ng-disabled="!loginForm.$valid" class="button icon ion-log-in button-block button-royal"
+                        ng-click="login()">
+                    Login
+                </button>
+				<button ui-sref="signup" class="button button-clear button-block button-royal button-outline">Don't have an account ?</button>
+				<button ui-sref="forgot" class="button button-clear button-block button-royal button-outline">Forgot your password?</button>
+        </div>
+		</form>
+    </ion-content>
+
+</ion-view>

@@ -1,0 +1,14 @@
+<ion-view>
+	<ion-content class="blue">
+		  <h2 style="color:black; padding-top:25px;" align="center">Cari Klinik Lainnya</h2>
+			<ion-list class="padding">
+				<ion-item item-left class=" item-avatar" ng-repeat="cat in categories" type="text-wrap" href="#/maps/{{cat.id_category}}">
+
+						<img ng-src="img/{{cat.pict_category}}" width="70" height="70">
+
+						<h2 >{{cat.name_category}}</h2>
+						<h2>{{cat.name_category_id}}</h2>
+		</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>
